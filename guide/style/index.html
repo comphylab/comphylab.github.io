@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+	<meta charset="utf-8"/>
+	<title>Style</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="Turbulence Lab" href="https://turbulencelab.github.io/feed.xml">
+
+	<!-- Customized Bootstrap + Font Awesome + Solarized -->
+	<link href="/css/style.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+
+	<!-- <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32"> -->
+	<link rel="icon" type="image/png" href="/images/favicon/favicon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/images/favicon/favicon-512x512.png" sizes="512x512">
+
+	<link rel="manifest" href="/images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="d-flex flex-column h-100">
+	<header id="header" class="fixed-top">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-white">
+				<div class="container-fluid">
+				
+				<a class="navbar-brand" href="/">
+					<img class="logo d-inline-block align-top" src="/images/logo.svg">
+				</a>
+				
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link mx-1" href="/">home</a>
+						</li>
+
+						<li class="nav-item">
+						
+							<a class="nav-link mx-1" href="/people/">people</a>
+						
+						</li>
+
+						<li class="nav-item">
+						
+							<a class="nav-link mx-1" href="/research/">research</a>
+						
+						</li>
+
+						<li class="nav-item">
+						
+							<a class="nav-link mx-1" href="/publications/">publications</a>
+						
+						</li>
+
+						<li class="nav-item">
+						
+							<a class="nav-link mx-1" href="/teaching/">teaching</a>
+						
+						</li>
+
+						<li class="nav-item dropdown">
+						
+							<a class="nav-link dropdown-toggle mx-1" href="#"
+								id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								funs
+							</a>
+						
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<li>
+									<a class="dropdown-item" href="/genealogy/">
+										academic genealogy</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-item">
+						
+							<a class="nav-link mx-1" href="/joinus/">join us</a>
+						
+						</li>
+					</ul>
+				</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<div class="flex-shrink-0">
+		<div class="hugespacer"></div>
+		<div class="container mt-5 mb-5" id="content">
+			<div class="row">
+	<div class="col-lg-12">
+		<div class="bigtitle">
+			Style
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-2">
+	</div>
+	<div class="col-lg-8">
+		<div class="post">
+			<h2 id="introduction">Introduction</h2>
+
+<p>This is a style guide to help in formatting Markdown content for the site.  In general, I’ve tried to adhere to GitHub style, with the intention that anything that renders on GitHub will render here as well.  The following isn’t meant to be exhaustive, just a reminder of what’s possible with Markdown.</p>
+
+<hr />
+
+<h2 id="headings">Headings</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+</code></pre></div></div>
+
+<h1 id="heading-1">Heading 1</h1>
+<h2 id="heading-2">Heading 2</h2>
+<h3 id="heading-3">Heading 3</h3>
+<h4 id="heading-4">Heading 4</h4>
+<h5 id="heading-5">Heading 5</h5>
+<h6 id="heading-6">Heading 6</h6>
+
+<hr />
+
+<h2 id="text-styling">Text styling</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Italicize text by surrounding it in *asterisks* or _underscores_.
+Bold text by surrounding it with **double asterisks** or __double underscores__.
+Combine with **_double asterisks plus underscores_**.
+Strike-through text with ~~double tildes~~.
+Superscript contiguous text with carrots like x^2y, surround with parentheses for more complex expressions like x^(2y + 3z).
+</code></pre></div></div>
+
+<p>Italicize text by surrounding it in <em>asterisks</em> or <em>underscores</em>.</p>
+
+<p>Bold text by surrounding it with <strong>double asterisks</strong> or <strong>double underscores</strong>.</p>
+
+<p>Combine with <strong><em>double asterisks plus underscores</em></strong>.</p>
+
+<p>Strike-through text with <del>double tildes</del>.</p>
+
+<p>Superscript text with <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> like x<sup>2y</sup> or more subscript text with <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code> like x<sub>j</sub>.</p>
+
+<hr />
+
+<h2 id="lists">Lists</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* Thing one with an asterisk
++ Thing two with a plus
+- Thing three with a minus
+
+1. The first order of business
+2. The second order of business
+  * The first part of the 2nd order
+  * The second part of the 2nd order
+3. The third order of business
+</code></pre></div></div>
+
+<ul>
+  <li>Thing one with an asterisk</li>
+  <li>Thing two with a plus</li>
+  <li>Thing three with a minus</li>
+</ul>
+
+<ol>
+  <li>The first order of business</li>
+  <li>The second order of business
+    <ul>
+      <li>The first part of the 2nd order</li>
+      <li>The second part of the 2nd order</li>
+    </ul>
+  </li>
+  <li>The third order of business</li>
+</ol>
+
+<hr />
+
+<h2 id="links">Links</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[This is an external link to Google](http://www.google.com/)
+[This is a relative link to elsewhere in the site](/projects/)
+</code></pre></div></div>
+
+<p><a href="http://www.google.com/">This is an external link to Google</a></p>
+
+<p><a href="/projects/">This is a relative link to elsewhere in the site</a></p>
+
+<hr />
+
+<h2 id="images">Images</h2>
+
+<p>Images work like links, but with a prefaced !.  This supports SVG as well PNG, JPG, etc…</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![](/images/papers/bedford-canalization.png)
+![An image with alt text](/images/papers/bedford-global-migration.png)
+![](/images/logo.svg)
+</code></pre></div></div>
+<p><img src="/images/papers/bedford-canalization.png" alt="" /></p>
+
+<p><img src="/images/papers/bedford-global-migration.png" alt="An image with alt text" /></p>
+
+<p><img src="/images/logo.svg" alt="" /></p>
+
+<hr />
+
+<p>Can always drop in HTML, so sizing adjustments can be done with:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;img style="width:30px;" src="/images/logo.svg"/&gt;
+</code></pre></div></div>
+
+<p><img style="width:30px;" src="/images/logo.svg" /></p>
+
+<hr />
+
+<h2 id="code">Code</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A bit of inline monospaced font can be made `by surrounding text with backticks`.
+</code></pre></div></div>
+
+<p>A bit of inline monospaced font can be made <code class="language-plaintext highlighter-rouge">by surrounding text with backticks</code>.</p>
+
+<hr />
+
+<p>Larger code blocks can be made by surrounding the block with three backticks <code>```</code>, and code can be highlighted by specifying language after the backticks, like so:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+```ruby
+s = "Ruby syntax highlighting";
+puts s
+```
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">JavaScript syntax highlighting</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+</code></pre></div></div>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span> <span class="o">=</span> <span class="s2">"Ruby syntax highlighting"</span><span class="p">;</span>
+<span class="nb">puts</span> <span class="n">s</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="tables">Tables</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>column A | column B | column C | column D
+-------- | -------- | -------- | --------
+1A       | 1B       | 1C       | 1D
+2A       | 2B       | 2C       | 2D
+3A       | 3B       | 3C       | 3D
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>column A</th>
+      <th>column B</th>
+      <th>column C</th>
+      <th>column D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1A</td>
+      <td>1B</td>
+      <td>1C</td>
+      <td>1D</td>
+    </tr>
+    <tr>
+      <td>2A</td>
+      <td>2B</td>
+      <td>2C</td>
+      <td>2D</td>
+    </tr>
+    <tr>
+      <td>3A</td>
+      <td>3B</td>
+      <td>3C</td>
+      <td>3D</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="blockquotes">Blockquotes</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; The data we have is not the data we want, and the data we need is not the data we have.
+</code></pre></div></div>
+
+<blockquote>
+  <p>The data we have is not the data we want, and the data we need is not the data we have.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="equations">Equations</h2>
+
+<p>Equations are rendered using KaTeX and take the follow LaTeX syntax. Equations are delimited by Liquid tags.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Inline equations: $\dot{x} = \sigma(y-x)$
+
+Displayed equations:
+$$
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+$$
+
+Except remove the ` from between { and %.
+</code></pre></div></div>
+
+<p>Inline equations: $\dot{x} = \sigma(y-x)$</p>
+
+<p>Displayed equations:
+\(\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)\)
+——————</p>
+
+<h2 id="horizontal-rule">Horizontal rule</h2>
+
+<p>Use three of more hyphens, asterisks or underscores.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>***
+---
+___
+</code></pre></div></div>
+
+<hr />
+<hr />
+<hr />
+
+<h2 id="line-breaks">Line breaks</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here's a line for us to start with.
+
+This line is separated by two newlines, so it will be a separate paragraph.
+
+This line is also a separate paragraph, though...
+Adding a single line break does not create a new paragraph.
+</code></pre></div></div>
+
+<p>Here’s a line for us to start with.</p>
+
+<p>This line is separated by two newlines, so it will be a separate paragraph.</p>
+
+<p>This line is also a separate paragraph, though…
+Adding a single line break does not create a new paragraph.</p>
+
+		</div>
+	</div>
+	<div class="col-lg-2"></div>
+</div>
+
+		</div>
+	</div>
+
+	<footer class="footer mt-auto py-3 bg-light">
+		<div class="container">
+			<p>
+				© 2021–2024 TURBULENCE Lab
+				<a class="off" href="/misc/about/">more ›</a>
+			</p>
+			<div class="row">
+				<div class="col-lg-4">
+					<h6>
+						Mechanical Engineering
+					</h6>
+					<address>
+						Room N104, Building 121 (Engineering Hall &#35;1), <br>
+						Yonsei University, <br>
+						50, Yonsei-ro, Seodaemun-gu, <br>
+						Seoul 03722, South Korea
+					</address>
+				</div>
+				<div class="col-lg-4">
+					<h6>
+						Computational Science and Engineering
+					</h6>
+					<address>
+						Room 613, Building 117 (A.S.T.C.), <br>
+						Yonsei University, <br>
+						50, Yonsei-ro, Seodaemun-gu, <br>
+						Seoul 03722, South Korea
+					</address>
+				</div>
+				<div class="col-lg-4 d-flex flex-row justify-content-start justify-content-lg-end align-items-start align-items-lg-center">
+					<img class="yonsei-bk21-logo p-3" src="/images/yonsei_bk21.svg" />
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		// Show and hide header when scroll up and down
+		var last_scroll_top = 0;
+		var header = document.getElementById('header');
+
+		window.addEventListener('scroll', function(e) {
+			let scroll_top = window.scrollY;
+
+			// Scrolling up
+			if (scroll_top > last_scroll_top && scroll_top > 20) {
+				header.classList.remove("slide-up");
+				header.classList.add("slide-down");
+			// Scrolling down
+			} else {
+				header.classList.remove("slide-down");
+				header.classList.add("slide-up");
+
+			}
+
+			last_scroll_top = scroll_top;
+		});
+	</script>
+<!--
+	<script type="text/x-mathjax-config">
+		window.MathJax = {
+			loader: {load: ['[tex]/color']},
+			tex: {
+				packages: ['base',],        // extensions to use
+				processEscapes: true,      // use \$ to produce a literal dollar sign
+				processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
+				processRefs: true,         // process \ref{...} outside of math mode
+				digits: /^(?:[0-9]+(?:\{,\}[0-9]{3})*(?:\.[0-9]*)?|\.[0-9]+)/,
+									// pattern for recognizing numbers
+				tags: 'ams',              // or 'ams' or 'all'
+				tagSide: 'right',          // side for \tag macros
+				tagIndent: '0.8em',        // amount to indent tags
+				useLabelIds: true,         // use label name rather than tag for ids
+				maxMacros: 1000,           // maximum number of macro substitutions per expression
+				maxBuffer: 5 * 1024,       // maximum size for the internal TeX string (5K)
+				baseURL:                   // URL for use with links to tags (when there is a <base> tag in effect)
+				(document.getElementsByTagName('base').length === 0) ?
+					'' : String(document.location).replace(/#.*$/, '')),
+				formatError:               // function called when TeX syntax errors occur
+					(jax, err) => jax.formatError(err)
+			},
+			options: {
+				skipHtmlTags: [            //  HTML tags that won't be searched for math
+					'script', 'noscript', 'style', 'textarea', 'pre',
+					'code', 'annotation', 'annotation-xml'
+				],
+				includeHtmlTags: {         //  HTML tags that can appear within math
+					br: '\n', wbr: '', '#comment': ''
+				},
+				ignoreHtmlClass: 'tex2jax_ignore',    //  class that marks tags not to search
+				processHtmlClass: 'tex2jax_process',  //  class that marks tags that should be searched
+				compileError: function (doc, math, err) {doc.compileError(math, err)},
+				typesetError: function (doc, math, err) {doc.typesetError(math, err)},
+				renderActions: {...}
+			}
+		}
+	</script>
+	<script type="text/javascript" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js">
+	</script> -->
+</body>
+</html>
